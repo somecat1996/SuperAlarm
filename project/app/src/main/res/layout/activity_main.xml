@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_zero_margin"
+    android:paddingLeft="@dimen/activity_zero_margin"
+    android:paddingRight="@dimen/activity_zero_margin"
+    android:paddingTop="@dimen/activity_zero_margin"
+    android:background="#ffffffff"
+    tools:context="superalarm.firsttry.MainActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/list"
+        android:layout_above="@+id/imageButton_group" />
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/apic7209"
+        android:id="@+id/imageView2"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageButton_add"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--<ImageView-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--app:srcCompat="@drawable/background_top"-->
+        <!--android:id="@+id/imageView4"-->
+        <!--android:layout_below="@+id/textClock4"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--tools:ignore="ContentDescription,RtlHardcoded" />-->
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/background_buttom"
+        android:id="@+id/imageView3"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:scaleType="fitXY"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/btn_group"
+        android:background="#FFFFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageButton_group"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"/>
+
+    <ImageButton
+        android:scaleType="fitXY"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#FFFFFFFF"
+        app:srcCompat="@drawable/btn_person"
+        android:id="@+id/imageButton_person"
+        android:contentDescription=""
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:scaleType="fitXY"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#FFFFFFFF"
+        app:srcCompat="@drawable/btn_add"
+        android:id="@+id/imageButton_add"
+        android:contentDescription=""
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"/>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="65dp"
+        android:format12Hour="h:mmaa"
+        android:format24Hour="h:mmaa"
+        android:gravity="center"
+        android:id="@+id/textClock3"
+        android:fontFamily="sans-serif-condensed"
+        tools:ignore="NewApi,RelativeOverlap,SpUsage,UnusedAttribute"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:format12Hour="MM月dd日   EEEE   yyyy"
+        android:format24Hour="MM月dd日   EEEE   yyyy"
+        android:gravity="center"
+        android:id="@+id/textClock4"
+        android:fontFamily="sans-serif-condensed"
+        tools:ignore="NewApi,RelativeOverlap,SpUsage,UnusedAttribute"
+        android:layout_below="@+id/textClock3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>
+
+
+
+</RelativeLayout>
